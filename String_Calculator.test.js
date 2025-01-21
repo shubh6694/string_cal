@@ -24,3 +24,8 @@ test('returns sum of multiple numbers', () => {
 test('returns the sum of numbers separated by commas or \n', () => {
     expect(add('1\n2,3')).toBe(6);
 });
+
+//Test 6
+test('returns sum of numbers with a different delimiter', () => {
+    expect(add('//;\n1;2')).toBe(3);
+});
