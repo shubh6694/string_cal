@@ -19,3 +19,8 @@ test('returns sum of two numbers', () => {
 test('returns sum of multiple numbers', () => {
     expect(add('10,20,30')).toBe(60);
 });
+
+//Test 5
+test('returns the sum of numbers separated by commas or \n', () => {
+    expect(add('1\n2,3')).toBe(6);
+});
