@@ -29,3 +29,8 @@ test('returns the sum of numbers separated by commas or \n', () => {
 test('returns sum of numbers with a different delimiter', () => {
     expect(add('//;\n1;2')).toBe(3);
 });
+
+//Test 7
+test('return error if number is negative', () => {
+    expect(() => add('1,-2')).toThrow('Negatives numers are not allowed: -2');
+});

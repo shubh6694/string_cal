@@ -19,6 +19,11 @@ function add(numbers){
     }
 
     const nums = numString.split(delimiter).map(Number);
+
+    // TEST 7
+    const negatives = nums.filter(num => num < 0);
+    if (negatives.length > 0) throw new Error(`Negatives numers are not allowed: ${negatives.join(', ')}`);
+
     return nums.reduce((sum, num) => sum + num); // calculate the sum
 
 }
