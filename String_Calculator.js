@@ -3,7 +3,7 @@ function add(numbers){
 
     // return parseInt(numbers); //For Test 2
 
-    // As numbers is a string , split it by comma and convert it to array of nums
+    // As numbers is a string , split it by comma and convert it to array of nums TEST 3
     const nums = numbers.split(',').map(num => parseInt(num));
     return nums.reduce((sum, num) => sum + num); // calculate the sum
 
