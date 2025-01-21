@@ -44,3 +44,8 @@ test('return error if number is negative', () => {
 test('ignore numbers greater than 1000', () => {
     expect(add('1,1010')).toBe(1);
 });
+
+//Test 10
+test('returns sum of numbers even with delimiter of any length', () => {
+    expect(add('//[***]\n1***2***3')).toBe(6);
+});
