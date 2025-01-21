@@ -22,9 +22,11 @@ function add(numbers){
 
     // TEST 7
     const negatives = nums.filter(num => num < 0);
-    if (negatives.length > 0) throw new Error(`Negatives numers are not allowed: ${negatives.join(', ')}`);
+    if (negatives.length > 0) throw new Error(`Negatives numbers are not allowed: ${numbers}`);
 
-    return nums.reduce((sum, num) => sum + num); // calculate the sum
+    return nums
+    .filter(num => num <= 1000)
+    .reduce((sum, num) => sum + num, 0);
 
 }
 

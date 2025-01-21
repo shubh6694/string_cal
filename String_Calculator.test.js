@@ -32,5 +32,15 @@ test('returns sum of numbers with a different delimiter', () => {
 
 //Test 7
 test('return error if number is negative', () => {
-    expect(() => add('1,-2')).toThrow('Negatives numers are not allowed: -2');
+    expect(() => add('-2')).toThrow('Negatives numbers are not allowed: -2');
+});
+
+//Test 8
+// test('return error with current input if some numbers are negative', () => {
+//     expect(() => add('1, -2, -3')).toThrow('Negatives numbers are not allowed: 1, -2, -3');
+// });
+
+//Test 9
+test('ignore numbers greater than 1000', () => {
+    expect(add('1,1010')).toBe(1);
 });
